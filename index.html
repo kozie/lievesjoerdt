@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Lieve Sjoerd</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Lieve Sjoerd<span class="fragment">t</span></h1>
+					<h3>&nbsp;</h3>
+					<p class="fragment">
+						<small>Door Koos en Floor</small>
+					</p>
+				</section>
+
+				<section data-transition="none">
+					<h2>Dit ben jij</h2>
+					<p>
+						<img src="img/sjoerd.jpg" />
+					</p>
+				</section>
+
+				<section data-transition="none">
+					<h2>en dit..</h2>
+					<p>
+						<img src="img/hugetree.jpg" class="" />
+					</p>
+				</section>
+
+				<section data-transition="none">
+					<h2>en dit..</h2>
+					<p>
+						<img src="img/chewing.gif" class="" />
+					</p>
+				</section>
+
+				<section data-transition="none">
+					<h2>of dit..</h2>
+					<p>
+						<img src="img/chewing2.gif" class="" />
+					</p>
+				</section>
+
+				<section data-transition="none">
+					<h2>En nu dit..</h2>
+					<h1 style="font-size: 8em !important;">27</h1>
+					<p class="fragment"><small>Maar nog steeds een jonge god</small></p>
+				</section>
+
+				<section>
+					<h1>En DEZE man</h1>
+					<p class="fragment current-visible"><img src="img/verkeerdeherman.jpg"/></p>
+					<p class="fragment current-visible">Oops..</p>
+					<p class="fragment">Verkeerde Herman ^_^</p>
+				</section>
+
+				<section data-transition="none">
+					<h1>Dus.. DEZE MAN..</h1>
+					<p><img src="img/herman.jpg" /></p>
+					<ul>
+						<li class="fragment">Is DE man</li>
+						<li class="fragment">Die dingen doet</li>
+						<li class="fragment">die niemand anders kan</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>En als je dit ziet..</h2>
+					<p class="fragment">Denk je <span class="fragment">daar zit een luchtje aan..</span></p>
+					<p class="fragment"><img src="img/richard.jpg" /></p>
+				</section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: 'zoom', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
