@@ -87,7 +87,7 @@
 
 				<section data-transition="none">
 					<h1>Dus.. DEZE MAN..</h1>
-					<p><img src="img/herman.jpg" /></p>
+					<p><img src="img/herman.jpg" height="400" /></p>
 					<ul>
 						<li class="fragment">Is DE man</li>
 						<li class="fragment">Die dingen doet</li>
@@ -103,8 +103,6 @@
 				</section>
 
 				<section data-transition="none">
-					<h2>En als je dit ziet..</h2>
-					<p> Denk je daar zit een luchtje aan..</p>
 					<p><img src="img/richard2.jpg" /></p>
 					<p><small>Well, hello there</small></p>
 				</section>
@@ -180,9 +178,19 @@
 				</section>
 
 				<section>
+					<h2>Dit is je zus</h2>
+					<p class="fragment">
+						<img src="img/inge.jpg" height="400" />
+					</p>
+					<p class="fragment">
+						Zij maakt van Floris je broer <span class="fragment">;)</span></p>
+					</p>
+				</section>
+
+				<section>
 					<h2>En dit <span class="fragment">is Koos</span></h2>
 					<p class="fragment">
-						<img src="img/koos.png" />
+						<img src="img/koos.png" height="250" />
 					</p>
 				</section>
 
@@ -203,7 +211,7 @@
 				<section>
 					<h2>En zeker niet met..</h2>
 					<p class="fragment">
-						<img src="img/krimpkousen.jpg" />
+						<img src="img/krimpkousen.jpg" height="400" />
 						<span class="fragment"><br />Yep</span><span class="fragment">.</span><span class="fragment">. </span><span class="fragment"> krimpkousen</span>
 					</p>
 				</section>				
@@ -275,6 +283,18 @@
 				</section>
 
 				<section>
+					<h2>Je kan beter zo'n ding..</h2>
+					<p class="fragment">
+						..naast je bed hebben.<br/>
+						<img src="img/shotgun.jpg" height="400" />
+					</p>
+
+					<p class="fragment">
+						Dan een drol..
+					</p>
+				</section>
+
+				<section>
 					<p>Sjoerd<span class="fragment">t met zijn nieuwe headset</span></p>
 					<p class="fragment">
 						<img src="img/sjoerdset.jpg" />
@@ -310,9 +330,17 @@
 				</section>
 
 				<section>
-					<h2>Laten we deze ook naar niet meer doen</h2>
+					<h2>Voor deze 2 ga je door 't vuur</h2>
 					<p class="fragment">
-						<img src="img/vuurkorf.jpg" />
+						<img src="img/miesennoa.jpg" alt="">
+					</p>
+				</section>
+
+				<section>
+					<h2>Maar niet deze</h2>
+					<p class="fragment">
+						<img src="img/vuurkorf.jpg" height="350" /><br/>
+						Die krijgen we toch niet aan.
 					</p>
 				</section>
 
@@ -345,7 +373,7 @@
 			// Full list of configuration options available here:
 			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
-				controls: true,
+				controls: false,
 				progress: true,
 				history: true,
 				center: true,
@@ -369,6 +397,9 @@
 			});
 	
 			function derp() {
+				alert("Soooooooooow!");
+				alert("Je hebt gewoon op je pa's hoofd gedrukt!");
+
 				var c = confirm("Weet je 't wel zeker, Sjoerdtum?");
 				if (c) {
 					alert("Goeie keus ;)");
