@@ -308,8 +308,33 @@
 						<img src="img/apnoc3.jpg" />
 					</p>
 				</section>
+
+				<section>
+					<h2>Laten we deze ook naar niet meer doen</h2>
+					<p class="fragment">
+						<img src="img/vuurkorf.jpg" />
+					</p>
+				</section>
+
+				<section>
+					<h2>Oke<span class="fragment">, klaar met die onzin</span></h2>
+					<p class="fragment">Klik op de volgende afbeelding voor je Kado</p>
+					<p class="fragment">
+						<a href="javascript:void(0)" onclick="derp(); return false;"><img src="img/herman.jpg" /></a><br/>
+						<small>Als je durft natuurlijk ;)</small>
+					</p>
+				</section>
 			</div>
 
+			<script>
+				var myAudio = new Audio('springish.mp3'); 
+				myAudio.volume = .5;
+				myAudio.addEventListener('ended', function() {
+				    this.currentTime = 0;
+				    this.play();
+				}, false);
+				myAudio.play();
+			</script>
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
@@ -342,7 +367,18 @@
 					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
 				]
 			});
-
+	
+			function derp() {
+				var c = confirm("Weet je 't wel zeker, Sjoerdtum?");
+				if (c) {
+					alert("Goeie keus ;)");
+					window.location.href = "coupon.pdf";
+					return false;
+				} else {
+					alert("Oke, dan niet..");
+					return false;
+				}
+			}
 		</script>
 
 	</body>
